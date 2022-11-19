@@ -1,0 +1,33 @@
+@tailwind base;
+/* @tailwind components; */
+@tailwind utilities;
+
+main {
+    height: calc(100vh - 5rem);
+}
+
+body {
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+
+.vertical {
+    border-left: 1px solid rgb(65, 65, 65);
+    left: 50%;
+    width: 0px;
+    position: relative;
+}
+
+.square {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(163, 230, 53);
+    transform: rotate(45deg);
+}
+
+.square--active {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transform: rotate(0deg);
+}
