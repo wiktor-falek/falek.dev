@@ -1,18 +1,40 @@
 @tailwind base;
-/* @tailwind components; */
+@tailwind components;
 @tailwind utilities;
 
 
 @layer base {
+  /* temporary */
+  main {
+    @apply pb-96;
+  }
+    
   h1, h2 {
     @apply text-6xl leading-snug;
   }
 
-  /* .tile {
-    @apply ;
-  } */
+  .vertical {
+    @apply border-l border-c-gray left-1/2 relative
+  }
 
-  /* p, span, svg, h1, h2, h3, h4, h5, h6 {
-    @apply ;
-  } */
+  .c-tile {
+    @apply w-32 h-24 bg-neutral-700 flex items-center justify-center flex-col rounded-sm gap-1 hover:bg-neutral-600 transition-colors;
+    
+  }
+  .c-tile > i {
+    @apply text-5xl;
+  }
+
+  .c-tile > img {
+    @apply w-12 h-12 select-none;
+  }
+
+  .c-tile > svg {
+    @apply w-12 h-12 select-none;
+  }
+
+  .c-tile > p {
+    @apply text-xl font-bold;
+  }
+
 }
