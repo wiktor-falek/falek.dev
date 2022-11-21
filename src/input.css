@@ -18,7 +18,7 @@
   }
 
   .c-tile {
-    @apply w-32 h-24 bg-neutral-700 flex items-center justify-center flex-col rounded-sm gap-1 hover:bg-neutral-600 transition-colors;
+    @apply w-32 h-24 bg-c-tile flex items-center justify-center flex-col rounded-sm gap-1 hover:bg-neutral-700 transition-colors;
     
   }
   .c-tile > i {
