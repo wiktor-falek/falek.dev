@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="src/style.css" />
+    <title>Wiktor Falek</title>
     <link href="/dist/output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -14,21 +13,38 @@
   </head>
   <body class="bg-c-bg text-gray-300">
     <header
-      class="backdrop-blur-sm h-20 flex items-center gap-6 w-screen sticky top-0 z-50 border-b border-c-gray"
+      class="backdrop-blur-sm w-screen sm:w-10/12 sm:ml-24 h-20 flex content-between items-center sticky top-0 z-50 border-b border-c-gray"
     >
-      <div class="pl-4">
+      <div class="pl-4 flex items-center gap-6">
         <img
           src="https://media.discordapp.net/attachments/819918054791446529/1037071647783534702/20221101_1912080.jpg?width=514&height=685"
           alt=""
           class="h-16 w-16 object-cover rounded-full"
           style="object-position: 50% 50%"
         />
+        <strong class="from-neutral-100 text-3xl">Wiktor Falek</strong>
       </div>
-      <strong class="from-neutral-100 text-3xl">Wiktor Falek</strong>
+
+      <nav class="">
+        <ul class="flex gap-8 text-2xl text-gray-300">
+          <li>
+            <a href="#about" class="hover:text-gray-50">About</a>
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-gray-50">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-gray-50">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-gray-50">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <aside
-      class="flex flex-col justify-center w-16 h-screen fixed py-32 left-0 top-0 invisible sm:visible"
+      class="flex flex-col justify-center w-24 h-screen fixed py-32 left-0 top-0 invisible sm:visible"
     >
       <div class="vertical h-full"></div>
       <ul class="flex flex-col gap-2 items-center content-center h-fit py-6">
@@ -90,49 +106,42 @@
       </ul>
       <div class="vertical h-full"></div>
     </aside>
-    <!-- <aside class="flex items-end justify-center w-28">
-      <ul class="flex flex-col gap-6">
-          <li class="flex content-center items-center">
-            <div class="square square--active"></div>
-          </li>
-          <li>
-              <div class="square"></div>
-          </li>
-          <li>
-              <div class="square"></div>
-          </li>
-          <li>
-              <div class="square"></div>
-          </li>
-      </ul>
-    </aside> -->
 
     <main class="content-start w-10/12 m-auto">
-      <section class="w-full h-screen pt-32 sm:ml-6">
+      <section id="about" class="w-full h-screen pt-32 sm:ml-6">
         <h1>
           Hi, I'm
           <span class="text-green-400">Wiktor Falek</span>
         </h1>
-        <h2 class="text-6xl block">Fullstack JavaScript developer</h2>
+        <h2 class="">
+          Fullstack JavaScript developer
+          <span class="block">specialized in frontend</span>
+        </h2>
         <button class="py-2 px-6 my-6 uppercase bg-green-800 rounded text-2xl">
           Call to action
         </button>
       </section>
 
-      <section class="mx-auto w-fit">
+      <section id="skills" class="mx-auto w-fit">
         <h1 class="mb-6 text-center">My tech stack</h1>
-        <h2 class="text-lg">Hover to see more</h2>
         <div
           class="grid grid-cols-auto gap-2 grid-rows-2 lg:grid-cols-6 grid-cols-3 w-fit"
         >
-          <div class="c-tile">
+          <div class="c-tile" id="button">
             <i class="devicon-html5-plain colored"></i>
             <p>HTML5</p>
+            <div role="tooltip" class="invisible">Semantic HTML,</div>
           </div>
 
           <div class="c-tile">
             <i class="devicon-css3-plain colored"></i>
             <p>CSS</p>
+            <div role="tooltip" class="invisible">
+              <ul>
+                <li>Responsive Design</li>
+                <li>Mobile First</li>
+              </ul>
+            </div>
           </div>
           <div class="c-tile">
             <i class="devicon-javascript-plain colored"></i>
@@ -224,10 +233,29 @@
             <p>Alacritty</p>
           </div>
           <div class="c-tile">
-            <img src="./i3wm.png" alt="" />
+            <img src="./public/i3wm.png" alt="" />
             <p>i3-gaps</p>
           </div>
         </div>
+      </section>
+
+      <section id="projects">
+        <h1 class="text-center mb-6">Projects</h1>
+        <!-- project -->
+        <div class="flex h-fit">
+          <div class="w-1/2 flex bg-slate-600 opacity-5">.</div>
+          <div class="w-1/2">
+            <img
+              class="w-fit h-auto"
+              src="./public/22-Nov-22 23-47-29.png"
+              alt="flashcards app"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1 class="text-center mb-6">Contact</h1>
       </section>
     </main>
   </body>

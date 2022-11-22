@@ -2,24 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-  /* temporary */
-  main {
-    @apply pb-96;
+  section {
+    @apply min-h-screen;
   }
-    
-  h1, h2 {
+
+  h1 {
     @apply text-6xl leading-snug;
   }
 
+  h2 {
+    @apply text-5xl;
+  }
+
   .vertical {
-    @apply border-l border-c-gray left-1/2 relative
+    @apply border-l border-c-gray left-1/2 relative;
   }
 
   .c-tile {
     @apply w-32 h-24 bg-c-tile flex items-center justify-center flex-col rounded-sm gap-1 hover:bg-neutral-700 transition-colors;
-    
   }
   .c-tile > i {
     @apply text-5xl;
@@ -37,4 +38,8 @@
     @apply text-xl font-bold;
   }
 
+  .c-tile > [role='tooltip'] {
+    @apply bg-c-gray font-bold !absolute px-2 py-3 rounded-sm w-48 h-32 translate-y-[-121px];
+    
+  }
 }
