@@ -13,9 +13,9 @@
   </head>
   <body class="bg-c-bg text-gray-300">
     <header
-      class="backdrop-blur-sm w-screen sm:w-10/12 sm:ml-24 h-20 flex content-between items-center sticky top-0 z-50 border-b border-c-gray"
+      class="backdrop-blur-sm sm:mx-24 h-20 flex justify-between items-center sticky top-0 z-50 border-b border-c-gray"
     >
-      <div class="pl-4 flex items-center gap-6">
+      <div class="flex items-center gap-6">
         <img
           src="https://media.discordapp.net/attachments/819918054791446529/1037071647783534702/20221101_1912080.jpg?width=514&height=685"
           alt=""
@@ -108,22 +108,30 @@
     </aside>
 
     <main class="content-start w-10/12 m-auto">
-      <section id="about" class="w-full h-screen pt-32 sm:ml-6">
-        <h1>
-          Hi, I'm
-          <span class="text-green-400">Wiktor Falek</span>
-        </h1>
-        <h2 class="">
-          Fullstack JavaScript developer
-          <span class="block">specialized in frontend</span>
-        </h2>
-        <button class="py-2 px-6 my-6 uppercase bg-green-800 rounded text-2xl">
-          Call to action
-        </button>
+      <section class="w-full h-screen pt-32">
+        <div class="flex justify-start sm:pl-12 lg:pl-[10%] lg:gap-12 xl:gap-24">
+          <div class="">
+            <h1 id="about" class="pt-[300px] mt-[-300px]">
+              Hi, I'm
+              <span class="text-green-400">Wiktor Falek</span>
+            </h1>
+            <h2 class="">
+              Fullstack JavaScript developer
+              <span class="block">specialized in frontend</span>
+            </h2>
+            <button
+              class="py-2 px-6 my-6 uppercase bg-green-800 rounded text-2xl"
+            >
+              Call to action
+            </button>
+          </div>
+        </div>
       </section>
 
-      <section id="skills" class="mx-auto w-fit">
-        <h1 class="mb-6 text-center">My tech stack</h1>
+      <section class="mx-auto w-fit">
+        <h1 id="skills" class="mb-6 text-center pt-[200px] mt-[-200px]">
+          My tech stack
+        </h1>
         <div
           class="grid grid-cols-auto gap-2 grid-rows-2 lg:grid-cols-6 grid-cols-3 w-fit"
         >
@@ -160,6 +168,9 @@
             <p>Tailwind</p>
           </div>
 
+          <!-- gap -->
+          <div class="col-span-3 lg:hidden h-2"></div>
+
           <div class="c-tile">
             <i class="devicon-nodejs-plain colored"></i>
             <p>Node.js</p>
@@ -184,13 +195,11 @@
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
             />
-            <!-- <i class="devicon-python-plain"></i> -->
             <p>Python</p>
           </div>
-          <!-- <div class="c-tile">
-            <i class="devicon-django-plain"></i>
-            <p>Django</p>
-          </div> -->
+
+          <!-- gap -->
+          <div class="col-span-3 lg:hidden h-2"></div>
 
           <div class="c-tile">
             <i class="devicon-git-plain colored"></i>
@@ -239,8 +248,10 @@
         </div>
       </section>
 
-      <section id="projects">
-        <h1 class="text-center mb-6">Projects</h1>
+      <section>
+        <h1 id="projects" class="text-center mb-6 pt-[200px] mt-[-200px]">
+          Projects
+        </h1>
         <!-- project -->
         <div class="flex h-fit">
           <div class="w-1/2 flex bg-slate-600 opacity-5">.</div>
@@ -254,8 +265,10 @@
         </div>
       </section>
 
-      <section id="contact">
-        <h1 class="text-center mb-6">Contact</h1>
+      <section>
+        <h1 id="contact" class="text-center mb-6 pt-[200px] mt-[-200px]">
+          Contact
+        </h1>
       </section>
     </main>
   </body>
