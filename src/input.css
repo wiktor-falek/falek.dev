@@ -37,12 +37,11 @@
     @apply text-xl font-bold;
   }
 
-  .c-tile > [role='tooltip'] {
+  .c-tile > [role="tooltip"] {
     @apply bg-c-gray font-bold !absolute px-2 py-3 rounded-sm w-48 h-32 translate-y-[-121px];
-    
   }
-}
 
-section {
-  min-height: max(100vh, 1000px) !important;
+  section {
+    @apply pt-[180px] mt-[-180px] min-h-[1200px];
+  }
 }

@@ -19,14 +19,14 @@
         <img
           src="https://media.discordapp.net/attachments/819918054791446529/1037071647783534702/20221101_1912080.jpg?width=514&height=685"
           alt=""
-          class="h-16 w-16 object-cover rounded-full"
+          class="ml-4 h-16 w-16 object-cover rounded-full"
           style="object-position: 50% 50%"
         />
         <strong class="from-neutral-100 text-3xl">Wiktor Falek</strong>
       </div>
 
       <nav class="">
-        <ul class="flex gap-8 text-2xl text-gray-300">
+        <ul class="hidden lg:flex gap-8 text-2xl text-gray-300 ">
           <li>
             <a href="#about" class="hover:text-gray-50">About</a>
           </li>
@@ -108,10 +108,13 @@
     </aside>
 
     <main class="content-start w-10/12 m-auto">
-      <section class="w-full h-screen pt-32">
-        <div class="flex justify-start sm:pl-12 lg:pl-[10%] lg:gap-12 xl:gap-24">
+      <!-- pt-32 -->
+      <section id="about" class="w-full h-screen pt-[428px] mt-[-300px]">
+        <div
+          class="flex justify-start sm:pl-12 lg:pl-[10%] lg:gap-12 xl:gap-24"
+        >
           <div class="">
-            <h1 id="about" class="pt-[300px] mt-[-300px]">
+            <h1>
               Hi, I'm
               <span class="text-green-400">Wiktor Falek</span>
             </h1>
@@ -119,8 +122,18 @@
               Fullstack JavaScript developer
               <span class="block">specialized in frontend</span>
             </h2>
+            <p class="text-2xl pt-8">
+              <span class="block">
+                Self taught web developer from Poland, currently located in
+                Sweden.
+              </span>
+              <span class="block">
+                I am looking forward to taking my skills to the next level by
+                working with you.
+              </span>
+            </p>
             <button
-              class="py-2 px-6 my-6 uppercase bg-green-800 rounded text-2xl"
+              class="py-2 px-6 my-6 uppercase !bg-[#20ac51] text-neutral-800 rounded font-bold text-2xl"
             >
               Call to action
             </button>
@@ -128,10 +141,8 @@
         </div>
       </section>
 
-      <section class="mx-auto w-fit">
-        <h1 id="skills" class="mb-6 text-center pt-[200px] mt-[-200px]">
-          My tech stack
-        </h1>
+      <section id="skills" class="mx-auto w-fit">
+        <h1 class="mb-6 text-center">My tech stack</h1>
         <div
           class="grid grid-cols-auto gap-2 grid-rows-2 lg:grid-cols-6 grid-cols-3 w-fit"
         >
@@ -248,11 +259,10 @@
         </div>
       </section>
 
-      <section>
-        <h1 id="projects" class="text-center mb-6 pt-[200px] mt-[-200px]">
-          Projects
-        </h1>
-        <!-- project -->
+      <section id="projects">
+        <h1 class="text-center mb-6">Projects</h1>
+
+        <!-- flashcards project -->
         <div class="flex h-fit">
           <div class="w-1/2 flex bg-slate-600 opacity-5">.</div>
           <div class="w-1/2">
@@ -265,8 +275,8 @@
         </div>
       </section>
 
-      <section>
-        <h1 id="contact" class="text-center mb-6 pt-[200px] mt-[-200px]">
+      <section id="contact">
+        <h1 class="text-center mb-6">
           Contact
         </h1>
       </section>
