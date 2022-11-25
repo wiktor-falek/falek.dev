@@ -4,11 +4,15 @@
 
 @layer base {
   h1 {
-    @apply text-6xl leading-snug;
+    @apply text-4xl lg:text-6xl leading-snug;
   }
 
   h2 {
-    @apply text-5xl;
+    @apply text-3xl lg:text-5xl;
+  }
+
+  p {
+    @apply text-lg lg:text-xl;
   }
 
   section {
@@ -20,10 +24,10 @@
   }
 
   .c-tile {
-    @apply w-32 h-24 bg-c-tile flex items-center justify-center flex-col rounded-sm gap-1 hover:bg-neutral-700 transition-colors;
-  }
-  .c-tile > i {
-    @apply text-5xl;
+    @apply 
+    w-32 h-24 scale-75 sm:scale-100 bg-c-tile flex items-center justify-center flex-col rounded-sm gap-1 hover:bg-neutral-700 transition-colors
+    /* maintain equal gap after scaling down by 0.75 */
+    mx-[-16px] my-[-12px] sm:mx-0 sm:my-0;
   }
 
   .c-tile > img {
@@ -34,8 +38,12 @@
     @apply w-12 h-12 select-none;
   }
 
+  .c-tile > i {
+    @apply text-5xl select-none;
+  }
+
   .c-tile > p {
-    @apply text-xl font-bold;
+    @apply text-base sm:text-xl font-bold;
   }
 
   .c-tile > [role="tooltip"] {
