@@ -8,6 +8,9 @@ module.exports = {
         "c-tile": "#272A2C",
         "c-bg": "#17191A",
       },
+      aspectRatio: {
+        '4/3': '4 / 3',
+      },
     },
   },
   plugins: [],
