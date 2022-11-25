@@ -4,11 +4,15 @@
 
 @layer base {
   h1 {
-    @apply text-6xl leading-snug;
+    @apply text-4xl lg:text-6xl leading-snug;
   }
 
   h2 {
-    @apply text-5xl;
+    @apply text-3xl lg:text-5xl;
+  }
+
+  p {
+    @apply text-lg lg:text-xl;
   }
 
   section {
