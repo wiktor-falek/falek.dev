@@ -2,13 +2,49 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LPQ7MDCJF"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1LPQ7MDCJF"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-1LPQ7MDCJF');
+      gtag("config", "G-1LPQ7MDCJF");
+    </script>
+
+    <!-- emailjs -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Ku9L4LbhWC0MLO6Sk");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("email-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            // this.contact_number.value = (Math.random() * 100000) | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm("service_q48ogo5", "template_xmo5ngf", this).then(
+              function () {
+                console.log("SUCCESS!");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+              }
+            );
+          });
+      };
     </script>
 
     <meta charset="UTF-8" />
@@ -179,9 +215,7 @@
       <section id="skills" class="flex flex-col items-center">
         <h2 class="mb-6 text-center">My tech stack</h2>
         <div class="flex items-center">
-          <div
-            class="grid gap-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6"
-          >
+          <div class="grid gap-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
             <div class="c-tile" id="button">
               <i class="devicon-html5-plain colored"></i>
               <p>HTML5</p>
@@ -337,8 +371,46 @@
         </div>
       </section>
 
-      <section id="contact">
+      <section
+        id="contact"
+        class="flex items-center flex-col"
+        onsubmit="(e) => {e.preventDefault()}"
+      >
         <h2 class="text-center mb-6">Contact</h2>
+        <form id="email-form" action="POST" class="flex flex-col max-w-sm">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            minlength="1"
+            class="bg-transparent rounded-md mb-4 h-10"
+            maxlength="32"
+          />
+
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            class="bg-transparent rounded-md mb-4 h-10"
+          />
+
+          <textarea
+            id="message"
+            name="message"
+            spellcheck="false"
+            cols="30"
+            rows="8"
+            class="bg-transparent rounded-md mt-2"
+          ></textarea>
+
+          <input
+            class="button w-full bg-slate-700 h-10 mt-6"
+            type="submit"
+            value="Submit"
+          />
+        </form>
       </section>
     </main>
   </body>
