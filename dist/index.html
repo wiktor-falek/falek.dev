@@ -16,6 +16,8 @@
       gtag("config", "G-1LPQ7MDCJF");
     </script>
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- emailjs -->
     <script
       type="text/javascript"
@@ -32,15 +34,36 @@
           .getElementById("email-form")
           .addEventListener("submit", function (event) {
             event.preventDefault();
-            // generate a five digit number for the contact_number variable
-            // this.contact_number.value = (Math.random() * 100000) | 0;
-            // these IDs from the previous steps
+
             emailjs.sendForm("service_q48ogo5", "template_xmo5ngf", this).then(
               function () {
-                console.log("SUCCESS!");
+                Swal.fire({
+                  title: "Success",
+                  text: "Message sent successfully",
+                  icon: "success",
+                  toast: true,
+                  timer: 3000,
+                  timerProgressBar: true,
+                  position: "bottom-right",
+                  showCancelButton: false,
+                  showConfirmButton: false,
+                });
+
+                document.getElementById("email-form").reset();
               },
               function (error) {
-                console.log("FAILED...", error);
+                Swal.fire({
+                  title: "Error",
+                  text: "Failed to send message :(",
+                  icon: "error",
+                  toast: true,
+                  timer: 3000,
+                  timerProgressBar: true,
+                  position: "bottom-right",
+                  showCancelButton: false,
+                  showConfirmButton: false,
+                });
+
               }
             );
           });
@@ -59,7 +82,7 @@
   </head>
   <body class="bg-c-bg text-gray-300">
     <header
-      class="backdrop-blur-sm sm:mx-24 px-8 sm:px-0 h-20 flex justify-between items-center sticky top-0 z-50 border-b border-c-gray"
+      class="backdrop-blur-sm sm:mx-24 px-8 sm:px-0 h-20 flex justify-between items-center sticky top-0 z-40 border-b border-c-gray"
     >
       <div class="flex items-center gap-2 lg:gap-6">
         <img
@@ -386,6 +409,7 @@
             minlength="1"
             class="bg-transparent rounded-md mb-4 h-10"
             maxlength="32"
+            required
           />
 
           <label for="email">Email</label>
@@ -394,6 +418,7 @@
             name="email"
             type="email"
             class="bg-transparent rounded-md mb-4 h-10"
+            required
           />
 
           <textarea
@@ -403,6 +428,7 @@
             cols="30"
             rows="8"
             class="bg-transparent rounded-md mt-2"
+            required
           ></textarea>
 
           <input
