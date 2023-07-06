@@ -63,7 +63,6 @@
                   showCancelButton: false,
                   showConfirmButton: false,
                 });
-
               }
             );
           });
@@ -82,19 +81,15 @@
   </head>
   <body class="bg-c-bg text-gray-300">
     <header
-      class="backdrop-blur-sm sm:mx-24 px-8 sm:px-0 h-20 flex justify-between items-center sticky top-0 z-40 border-b border-c-gray"
+      class="backdrop-blur-sm sm:mx-20 px-8 sm:px-0 flex justify-between items-center gap-4 h-20 sticky top-0 z-50"
     >
-      <div class="flex items-center gap-2 lg:gap-6">
-        <img
-          src=""
-          alt=""
-          class="h-16 w-16 object-cover rounded-full"
-          style="object-position: 50% 50%"
-        />
-        <strong class="from-neutral-50 text-xl lg:text-3xl font-normal"
-          >Wiktor Falek</strong
-        >
-      </div>
+      <hr class="w-16 border-c-gray" />
+      <strong
+        class="from-neutral-50 text-xl lg:text-3xl font-normal text-green-400"
+        >falek.dev
+      </strong>
+
+      <hr class="border-c-gray flex-1" />
 
       <nav class="">
         <ul class="hidden lg:flex gap-8 text-2xl text-gray-300">
@@ -115,7 +110,7 @@
     </header>
 
     <aside
-      class="flex flex-col justify-center w-24 h-screen fixed py-32 left-0 top-0 invisible sm:visible"
+      class="flex flex-col justify-center h-screen w-20 py-20 left-0 fixed top-0 invisible sm:visible"
     >
       <div class="vertical h-full"></div>
       <ul class="flex flex-col gap-2 items-center content-center h-fit py-6">
@@ -179,29 +174,31 @@
     </aside>
 
     <main class="content-start w-10/12 m-auto">
-      <!-- pt-32 -->
       <section
         id="about"
         class="w-full h-screen pt-60 lg:pt-[428px] lg:mt-[-300px] sm:pl-12 lg:pl-[10%]"
       >
         <div class="flex flex-row lg:gap-12 xl:gap-24">
           <div>
-            <h1 class="">
+            <h1>
               Hi, I'm
               <span class="text-green-400">Wiktor Falek</span>
             </h1>
-            <h2 class="pt-4 pb-8">
-              Fullstack JavaScript developer
+            <h2 class="pt-4 pb-8 max-w-xl">
+              Fullstack developer
               <span class="block">specialized in frontend</span>
+              <!-- <span class="block">specialized in frontend</span> -->
             </h2>
             <p class="max-w-[41ch]">
               <span class="block">
                 Self taught programmer from Poland, currently located in Sweden.
               </span>
               <span class="block max-w-3xl">
-                Curious about anything web development, whether it's building
-                interfaces, creating good experience for users, implementing
-                functionality or servers and deployment.
+                Passionate programmer from Poland,currently located in Sweden.
+                Curious about everything related to web development,from
+                designing, building interfaces and creating good experience for
+                users, to building functionality, writing backend and
+                deployment.
               </span>
             </p>
 
@@ -369,7 +366,7 @@
             </div>
             <div class="flex justify-center gap-4 sm:gap-8 my-8">
               <a
-                href="https://flashcards.falek.dev/"
+                href="#"
                 target="_blank"
                 class="button bg-slate-600 !text-xs !sm:text-sm sm:w-32 py-2 !px-4 sm:px-6"
                 >Site</a

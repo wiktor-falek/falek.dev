@@ -24,9 +24,7 @@
   }
 
   .c-tile {
-    @apply 
-    w-32 h-24 scale-75 sm:scale-100 bg-c-tile flex items-center justify-center flex-col rounded-sm gap-1 hover:bg-neutral-700 transition-colors
-    /* maintain equal gap after scaling down by 0.75 */
+    @apply w-32 h-24 scale-75 sm:scale-100 bg-c-tile flex items-center justify-center flex-col rounded-sm gap-1 hover:bg-neutral-700 transition-colors
     mx-[-16px] my-[-12px] sm:mx-0 sm:my-0;
   }
 
