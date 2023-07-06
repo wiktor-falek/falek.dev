@@ -2,6 +2,9 @@
 module.exports = {
   content: ["**/*.{html,js}"],
   theme: {
+    fontFamily: {
+      text: "Inconsolata",
+    },
     extend: {
       colors: {
         "c-gray": "#444444",
@@ -9,11 +12,9 @@ module.exports = {
         "c-bg": "#17191A",
       },
       aspectRatio: {
-        '4/3': '4 / 3',
+        "4/3": "4 / 3",
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [require("@tailwindcss/forms")],
 };

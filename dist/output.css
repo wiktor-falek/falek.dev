@@ -1094,20 +1094,8 @@ section {
   isolation: auto;
 }
 
-.z-40 {
-  z-index: 40;
-}
-
-.z-10 {
-  z-index: 10;
-}
-
 .z-50 {
   z-index: 50;
-}
-
-.col-span-2 {
-  grid-column: span 2 / span 2;
 }
 
 .float-right {
@@ -1320,10 +1308,6 @@ section {
   height: 24rem;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
 .h-10 {
   height: 2.5rem;
 }
@@ -1332,24 +1316,12 @@ section {
   height: 6rem;
 }
 
-.h-16 {
-  height: 4rem;
+.w-16 {
+  width: 4rem;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-px {
-  height: 1px;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-24 {
-  width: 6rem;
+.w-20 {
+  width: 5rem;
 }
 
 .w-10\/12 {
@@ -1358,22 +1330,6 @@ section {
 
 .w-full {
   width: 100%;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-64 {
-  width: 16rem;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .max-w-xl {
@@ -1597,10 +1553,6 @@ section {
 
 .list-outside {
   list-style-position: outside;
-}
-
-.list-disc {
-  list-style-type: disc;
 }
 
 .appearance-none {
@@ -1916,8 +1868,8 @@ section {
   justify-items: stretch;
 }
 
-.gap-6 {
-  gap: 1.5rem;
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-8 {
@@ -1928,8 +1880,8 @@ section {
   gap: 0.5rem;
 }
 
-.gap-4 {
-  gap: 1rem;
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -2285,10 +2237,6 @@ section {
   border-bottom-width: 1px;
 }
 
-.border-b {
-  border-bottom-width: 1px;
-}
-
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -2299,6 +2247,10 @@ section {
 
 .border-r {
   border-right-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
 }
 
 .border-l {
@@ -2410,11 +2362,6 @@ section {
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-c-gray {
-  --tw-bg-opacity: 1;
-  background-color: rgb(68 68 68 / var(--tw-bg-opacity));
 }
 
 .from-neutral-50 {
@@ -2538,9 +2485,9 @@ section {
   padding-right: 2rem;
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-6 {
@@ -2591,11 +2538,6 @@ section {
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .pt-60 {
@@ -2668,6 +2610,10 @@ section {
 
 .align-super {
   vertical-align: super;
+}
+
+.font-text {
+  font-family: Inconsolata;
 }
 
 .text-xl {
@@ -2779,6 +2725,10 @@ section {
 .stacked-fractions {
   --tw-numeric-fraction: stacked-fractions;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .text-gray-300 {
@@ -3169,6 +3119,12 @@ section {
   content: var(--tw-content);
 }
 
+@font-face {
+  font-family: 'Inconsolata';
+
+  src: url("../dist/fonts/Inconsolata/static/Inconsolata-SemiBold.ttf");
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -3275,13 +3231,6 @@ section {
   text-align: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  .dark\:bg-gray-700 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-  }
-}
-
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -3319,15 +3268,6 @@ section {
     .sm\:container {
       max-width: 1536px;
     }
-  }
-
-  .sm\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
-
-  .sm\:mx-24 {
-    margin-left: 6rem;
-    margin-right: 6rem;
   }
 
   .sm\:mx-20 {
@@ -3374,6 +3314,16 @@ section {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -3385,10 +3335,6 @@ section {
     display: flex;
   }
 
-  .lg\:hidden {
-    display: none;
-  }
-
   .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -3397,12 +3343,8 @@ section {
     flex-direction: row;
   }
 
-  .lg\:gap-6 {
-    gap: 1.5rem;
-  }
-
-  .lg\:gap-12 {
-    gap: 3rem;
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
   .lg\:pt-\[428px\] {

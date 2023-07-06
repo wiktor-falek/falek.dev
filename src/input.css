@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Inconsolata';
+  src: url("../dist/fonts/Inconsolata/static/Inconsolata-SemiBold.ttf");
+}
+
 @layer base {
   h1 {
     @apply text-4xl lg:text-6xl leading-snug;
