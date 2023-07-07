@@ -29,7 +29,7 @@
   }
 
   .c-tile {
-    @apply w-32 h-24 scale-75 sm:scale-100 bg-c-tile flex items-center justify-center flex-col rounded-sm gap-1 hover:bg-neutral-700 transition-colors
+    @apply w-32 h-24 scale-75 sm:scale-100 bg-c-tile flex items-center justify-center flex-col rounded-sm gap-1 hover:bg-neutral-700 transition-colors duration-200
     mx-[-16px] my-[-12px] sm:mx-0 sm:my-0;
   }
 
