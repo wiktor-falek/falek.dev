@@ -83,7 +83,7 @@
     <header
       class="backdrop-blur-sm sm:mx-20 px-8 sm:px-0 flex justify-between items-center gap-4 h-20 sticky top-0 z-50"
     >
-      <hr class="w-16 border-c-gray" />
+      <hr class="w-8 md:w-16 border-c-gray" />
       <strong
         class="from-neutral-50 text-xl lg:text-3xl font-normal text-green-400"
         >falek.dev
@@ -107,6 +107,8 @@
           </li>
         </ul>
       </nav>
+
+      <hr class="w-8 md:w-16 border-c-gray" />
     </header>
 
     <aside
@@ -200,9 +202,9 @@
             </p>
 
             <!-- <button -->
-              <!-- class="button py-2 px-6 my-6 !bg-[#1ac756] text-neutral-900" -->
+            <!-- class="button py-2 px-6 my-6 !bg-[#1ac756] text-neutral-900" -->
             <!-- > -->
-              <!-- Call to action -->
+            <!-- Call to action -->
             <!-- </button> -->
           </div>
           <div class="text-2xl pt-8 hidden xl:block">
@@ -279,51 +281,16 @@
         </div>
       </section>
 
-      <section id="projects">
+      <section id="projects flex items-center justify-center">
         <h2 class="text-center mb-6">Projects</h2>
 
-        <!-- flashcards project -->
-        <div class="flex h-fit lg:flex-row flex-col text-white">
-          <!-- !items-center !content-center !justify-center -->
-          <div class="flex flex-1 flex-col">
-            <h3 class="text-center mb-2 text-3xl">Flashcards</h3>
-            <p class="text-center px-6 my-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Quibusdam architecto temporibus magni nihil beatae recusandae
-              enim, unde tempore modi ut?
-            </p>
-            <div
-              class="flex flex-row flex-wrap justify-center gap-2 text-sm uppercase font-bold px-6"
-            >
-              <div class="px-3 py-1 rounded-2xl bg-amber-600">mongodb</div>
-              <div class="px-3 py-1 rounded-2xl bg-neutral-700">express</div>
-              <div class="px-3 py-1 rounded-2xl bg-green-500">vue</div>
-              <div class="px-3 py-1 rounded-2xl bg-green-700">node</div>
-            </div>
-            <div class="flex justify-center gap-4 sm:gap-8 my-8">
-              <a
-                href="#"
-                target="_blank"
-                class="button bg-slate-600 !text-xs !sm:text-sm sm:w-32 py-2 !px-4 sm:px-6"
-                >Site</a
-              >
-              <a
-                href="https://github.com/wiktor-falek/flashcards/"
-                target="_blank"
-                class="button bg-slate-500 !text-xs !sm:text-sm sm:w-32 py-2 !px-4 sm:px-6"
-                >Repo</a
-              >
-            </div>
-          </div>
-
-          <div class="flex-1 my-auto">
-            <img
-              loading="lazy"
-              class=""
-              src="./assets/22-Nov-22 23-47-29.png"
-              alt="flashcards app"
-            />
-          </div>
+        <div class="flex h-fit lg:flex-row flex-col text-white my-auto">
+          <img
+            loading="lazy"
+            class="rounded-3xl max-w-4xl"
+            src="./assets/22-Nov-22 23-47-29.png"
+            alt="flashcards app"
+          />
         </div>
       </section>
 
